@@ -88,7 +88,7 @@ for generation in range(num_generations):
 
     # Elite Selection - Keep some of the best individuals
     elite_size = 2
-    sorted_population = sorted(zip(population, fitall), key=lambda x: x[1], reverse=True)
+    sorted_population = sorted(zip(population, fitall), key=lambda x: x[1], reverse=True) #key is sorting the fitness, you reverse it to do it from smaller to bigger
     elites = [x[0] for x in sorted_population[:elite_size]]
 
     # Create new population
