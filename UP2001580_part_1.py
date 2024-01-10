@@ -80,8 +80,6 @@ for generation in range(num_generations):
         if i + 1 < len(parents):
             offspring.extend(mating_crossover(parents[i], parents[i+1]))
 
-####3
-
  # Apply mutation
     for i in range(len(offspring)):
         offspring[i] = mutate(offspring[i],mutation_rate)
